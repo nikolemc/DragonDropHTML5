@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<body>
+
+    <h2>Drag and Drop</h2>
+    <p>Drag the Iron Yard Logo back and forth between two boxes.</p>
+
+    <div id="box1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="~/Images/the-iron-yard-logo.png" draggable="true" ondragstart="drag(event)" id="drag1" width="240" height="240">
+    </div>
+
+    <div id="box2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</body>
